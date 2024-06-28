@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  font-family: 'Fira Code', monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary: #16213E;
+  --secondary: #0F3460;
+  --terceary: #533483;
+  --red: #E94560;
+  --soft-white: #f1f1f1;
+  --white: #fefefe;
+  --black: #111;
+  --gray: #222222;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
