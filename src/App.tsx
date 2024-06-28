@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home";
+import { Projetos } from "./pages/Projetos";
 import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
 import { DontExist } from "./pages/DontExist";
@@ -30,6 +31,7 @@ export const App = () => {
       <GlobalStyle color={color}></GlobalStyle>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/projetos" element={<Projetos />}></Route>
         <Route path="*" element={<DontExist />}></Route>
       </Routes>
     </>
