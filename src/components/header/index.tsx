@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <WebsiteTitle>Hugo Lopes</WebsiteTitle>
+        <WebsiteTitle>API Aviões</WebsiteTitle>
         <HeaderNavBar>
           <NavBarUl>
             <NavBarUlLi>
@@ -19,11 +19,7 @@ export const Header = () => {
             </NavBarUlLi>
 
             <NavBarUlLi>
-              <Link to={"/projetos"}>Projetos</Link>
-            </NavBarUlLi>
-
-            <NavBarUlLi>
-              <Link to={"/contato"}>Contato</Link>
+              <Link to={"/projetos"}>API</Link>
             </NavBarUlLi>
           </NavBarUl>
         </HeaderNavBar>

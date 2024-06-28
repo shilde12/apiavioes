@@ -18,19 +18,18 @@ export const TextContainer = styled.div`
 `;
 
 export const PersonIcon = styled.img`
-margin-right: 10rem; 
-transform: scaleX(-1); 
-width: 60%; 
+margin-right: 10rem;  
+width: 10%; 
 height: fit-content;
 `;
 
 export const TitleContainer = styled.div`
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-  background: #ff0000;
+  background: #13b6eb;
 
   & > * {
     padding-block: 4rem;

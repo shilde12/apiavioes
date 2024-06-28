@@ -11,7 +11,7 @@ export const CardCont = styled.div`
   & > * {
     display: flex;
     align-items: center;
-    color: red;
+    color: #13b6eb;
   }
 
   h1 {
