@@ -5,9 +5,18 @@ import { Service } from "./services/services";
 import { useEffect, useState } from "react";
 
 interface IGithubas {
-  name: string;
-  description: string;
-  clone_url: string;
+  codigo: string;
+  nome: string;
+  fabricante: string;
+  capacidade_passageiros: number;
+  alcance_km: number;
+  velocidade_cruzeiro_kmh: number;
+  comprimento_m: number;
+  envergadura_m: number;
+  altura_m: number;
+  peso_vazio_kg: number;
+  tipo_motor: string;
+  potencia_motor_kn: number;
 }
 
 export const Projetos = () => {
@@ -37,11 +46,18 @@ export const Projetos = () => {
           return (
             <>
               <Card
-                titulo={item.name.toUpperCase()}
-                descricao={
-                  item.description ? item.description : ""
-                }
-                url={item.clone_url}
+                codigo={item.codigo}
+                nome={item.nome}
+                fabricante={item.fabricante}
+                capacidade_passageiros={item.capacidade_passageiros}
+                alcance_km={item.alcance_km}
+                velocidade_cruzeiro_kmh={item.velocidade_cruzeiro_kmh}
+                comprimento_m={item.comprimento_m}
+                envergadura_m={item.envergadura_m}
+                altura_m={item.altura_m}
+                peso_vazio_kg={item.peso_vazio_kg}
+                tipo_motor={item.tipo_motor}
+                potencia_motor_kn={item.potencia_motor_kn}
               ></Card>
             </>
           );

@@ -2,7 +2,7 @@ export const Service = () => {
   const fetchApi = async () => {
     try {
       const response = await fetch(
-        `https://api.github.com/users/shilde12/repos`
+        `/apiavioes.json`
       );
 
       const data = await response.json();
