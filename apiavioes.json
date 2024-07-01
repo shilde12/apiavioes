@@ -1,0 +1,102 @@
+{
+    "avioes": [
+      {
+        "codigo": "B737",
+        "nome": "Boeing 737",
+        "fabricante": "Boeing",
+        "capacidade_passageiros": 85,
+        "alcance_km": 5760,
+        "velocidade_cruzeiro_kmh": 935,
+        "comprimento_m": 28.6,
+        "envergadura_m": 34.3,
+        "altura_m": 11.1,
+        "peso_vazio_kg": 41730,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 106.8
+      },
+      {
+        "codigo": "A320",
+        "nome": "Airbus A320",
+        "fabricante": "Airbus",
+        "capacidade_passageiros": 150,
+        "alcance_km": 5700,
+        "velocidade_cruzeiro_kmh": 880,
+        "comprimento_m": 37.57,
+        "envergadura_m": 35.8,
+        "altura_m": 11.76,
+        "peso_vazio_kg": 42500,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 120
+      },
+      {
+        "codigo": "B777",
+        "nome": "Boeing 777",
+        "fabricante": "Boeing",
+        "capacidade_passageiros": 368,
+        "alcance_km": 15700,
+        "velocidade_cruzeiro_kmh": 905,
+        "comprimento_m": 63.7,
+        "envergadura_m": 64.8,
+        "altura_m": 18.6,
+        "peso_vazio_kg": 161000,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 436
+      },
+      {
+        "codigo": "A380",
+        "nome": "Airbus A380",
+        "fabricante": "Airbus",
+        "capacidade_passageiros": 853,
+        "alcance_km": 15200,
+        "velocidade_cruzeiro_kmh": 945,
+        "comprimento_m": 72.7,
+        "envergadura_m": 79.8,
+        "altura_m": 24.1,
+        "peso_vazio_kg": 276800,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 356
+      },
+      {
+        "codigo": "MD-11",
+        "nome": "McDonnell Douglas MD-11",
+        "fabricante": "McDonnell Douglas",
+        "capacidade_passageiros": 410,
+        "alcance_km": 12100,
+        "velocidade_cruzeiro_kmh": 910,
+        "comprimento_m": 61.2,
+        "envergadura_m": 51.7,
+        "altura_m": 17.6,
+        "peso_vazio_kg": 142000,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 276
+      },
+      {
+        "codigo": "E190",
+        "nome": "Embraer 190",
+        "fabricante": "Embraer",
+        "capacidade_passageiros": 114,
+        "alcance_km": 4070,
+        "velocidade_cruzeiro_kmh": 890,
+        "comprimento_m": 36.24,
+        "envergadura_m": 28.72,
+        "altura_m": 10.55,
+        "peso_vazio_kg": 50400,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 82.3
+      },
+      {
+        "codigo": "CRJ900",
+        "nome": "Bombardier CRJ900",
+        "fabricante": "Bombardier Aerospace",
+        "capacidade_passageiros": 90,
+        "alcance_km": 3710,
+        "velocidade_cruzeiro_kmh": 860,
+        "comprimento_m": 36.3,
+        "envergadura_m": 24.8,
+        "altura_m": 7.57,
+        "peso_vazio_kg": 24700,
+        "tipo_motor": "Turbofan",
+        "potencia_motor_kn": 59.4
+      }
+    ]
+}  
