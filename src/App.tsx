@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Projetos } from "./pages/Projetos";
+import { Creditos } from "./pages/Creditos/Index";
 import { createGlobalStyle } from "styled-components";
 import { useEffect, useState } from "react";
 import { DontExist } from "./pages/DontExist";
@@ -22,7 +23,7 @@ export const App = () => {
   useEffect(() => {
     if (location.pathname == "/") {
       setColor("red");
-    } else if (location.pathname == "/projetos") {
+    } else if (location.pathname == "/api") {
       setColor("black");
     }
   }, [location]);
@@ -31,7 +32,8 @@ export const App = () => {
       <GlobalStyle color={color}></GlobalStyle>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/projetos" element={<Projetos />}></Route>
+        <Route path="/api" element={<Projetos />}></Route>
+        <Route path="/credits" element={<Creditos />}></Route>
         <Route path="*" element={<DontExist />}></Route>
       </Routes>
     </>

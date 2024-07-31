@@ -19,7 +19,11 @@ export const Header = () => {
             </NavBarUlLi>
 
             <NavBarUlLi>
-              <Link to={"/projetos"}>API</Link>
+              <Link to={"/api"}>API</Link>
+            </NavBarUlLi>
+
+            <NavBarUlLi>
+              <Link to={"/credits"}>Créditos</Link>
             </NavBarUlLi>
           </NavBarUl>
         </HeaderNavBar>

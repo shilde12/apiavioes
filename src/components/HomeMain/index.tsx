@@ -1,22 +1,12 @@
 import {
-  TextContainer,
-  Main,
-  PersonIcon,
-  TitleContainer,
+  Main
 } from "./styles/style";
-
-import user from "../../assets/user.svg";
 
 export const HomeMain = () => {
   return (
     <>
       <Main>
-          <TitleContainer>
-            <TextContainer>
-            <h2>API Display de Aviões</h2>
-              </TextContainer>
-            <PersonIcon src={user} alt="" />
-          </TitleContainer>
+              <h2>Seja bem vindo(a)</h2>
       </Main>
     </>
   );
