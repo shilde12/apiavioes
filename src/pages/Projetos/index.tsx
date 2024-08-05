@@ -21,45 +21,37 @@ interface IGithubas {
 
 export const Projetos = () => {
   const projServices = Service();
-
   const [projetos, setProjetos] = useState([]);
 
-  const setArray = async () => {
-    const newArray = await projServices.fetchApi();
-
-    console.log("nova array", newArray);
-
-    setProjetos(newArray);
-
-    console.log("PROJe", projetos);
-  };
-
   useEffect(() => {
+    const setArray = async () => {
+      const newArray = await projServices.fetchApi();
+      setProjetos(newArray);
+    };
     setArray();
-    console.log(projetos);
   }, []);
+
   return (
     <>
       <Header></Header>
       <Main>
         {projetos.map((item: IGithubas) => {
           return (
-            <>
-              <Card
-                codigo={item.codigo}
-                nome={item.nome}
-                fabricante={item.fabricante}
-                capacidade_passageiros={item.capacidade_passageiros}
-                alcance_km={item.alcance_km}
-                velocidade_cruzeiro_kmh={item.velocidade_cruzeiro_kmh}
-                comprimento_m={item.comprimento_m}
-                envergadura_m={item.envergadura_m}
-                altura_m={item.altura_m}
-                peso_vazio_kg={item.peso_vazio_kg}
-                tipo_motor={item.tipo_motor}
-                potencia_motor_kn={item.potencia_motor_kn}
-              ></Card>
-            </>
+            <Card
+              key={item.codigo}
+              codigo={item.codigo}
+              nome={item.nome}
+              fabricante={item.fabricante}
+              capacidade_passageiros={item.capacidade_passageiros}
+              alcance_km={item.alcance_km}
+              velocidade_cruzeiro_kmh={item.velocidade_cruzeiro_kmh}
+              comprimento_m={item.comprimento_m}
+              envergadura_m={item.envergadura_m}
+              altura_m={item.altura_m}
+              peso_vazio_kg={item.peso_vazio_kg}
+              tipo_motor={item.tipo_motor}
+              potencia_motor_kn={item.potencia_motor_kn}
+            />
           );
         })}
       </Main>
@@ -73,4 +65,5 @@ const Main = styled.main`
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  align-items: flex-start;
 `;

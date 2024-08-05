@@ -1,38 +1,36 @@
 import styled from "styled-components";
 
 export const CardCont = styled.div`
-  width: 30%;
-  border: solid red 1px;
+  width: 100%;
+  max-width: 400px; /* Define uma largura máxima para evitar estouro */
+  border: solid aqua 1px;
   display: flex;
   flex-direction: column;
-  padding-inline: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
   justify-content: space-between;
+  background-color: #2c2c2c; /* Fundo cinza escuro */
+  color: #13b6eb;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word; /* Quebra de linha para textos longos */
+  }
 
   & > * {
     display: flex;
-    align-items: center;
-    color: #13b6eb;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 10rem;
-  }
-`;
-
-export const ButtonContainer = styled.div`
-  width: 15%;
-  height: fit-content;
-  display: flex;
-`;
-
-export const Button = styled.button`
-  padding: .7rem 1rem;
-  font-size: 2rem;
-  background: red;
-  border-radius: 20px
 `;

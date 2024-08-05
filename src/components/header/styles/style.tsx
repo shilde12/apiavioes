@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  min-width: 100vw;
+  max-width: 100%;
   height: 60px;
   background: #13b6eb;
   display: flex;
@@ -34,6 +34,6 @@ export const NavBarUlLi = styled.li`
   letter-spacing: 0.05rem;
 
   & > a:hover {
-    color: blue;
+    color: white;
   }
 `;

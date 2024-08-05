@@ -1,4 +1,4 @@
-import { Button, ButtonContainer, CardCont } from "./styles/style";
+import { CardCont } from "./styles/style";
 
 export interface ICard {
   "codigo": string,
@@ -20,22 +20,19 @@ export const Card = (props: ICard) => {
     <>
       <CardCont>
         <h1>{props.nome}</h1>
-        <p>{props.codigo}</p>
-        <p>{props.fabricante}</p>
-        <p>{props.capacidade_passageiros}</p>
-        <p>{props.alcance_km}</p>
-        <p>{props.velocidade_cruzeiro_kmh}</p>
-        <p>{props.comprimento_m}</p>
-        <p>{props.envergadura_m}</p>
-        <p>{props.altura_m}</p>
-        <p>{props.peso_vazio_kg}</p>
-        <p>{props.tipo_motor}</p>
-        <p>{props.potencia_motor_kn}</p>
-        <ButtonContainer>
-          <Button>
-            Ir
-          </Button>
-        </ButtonContainer>
+        <ul>
+        <li>Código: {props.codigo}</li>
+        <li>Fabricante: {props.fabricante}</li>
+        <li>Capacidade: {props.capacidade_passageiros}</li>
+        <li>Alcance(km/h): {props.alcance_km}</li>
+        <li>Velocidade(km/h): {props.velocidade_cruzeiro_kmh}</li>
+        <li>Comprimento(m): {props.comprimento_m}</li>
+        <li>Envergadura(m): {props.envergadura_m}</li>
+        <li>Altura(m): {props.altura_m}</li>
+        <li>Peso Vazio(kg): {props.peso_vazio_kg}</li>
+        <li>Motor: {props.tipo_motor}</li>
+        <li>Potência: {props.potencia_motor_kn}</li>
+        </ul>
       </CardCont>
     </>
   );
